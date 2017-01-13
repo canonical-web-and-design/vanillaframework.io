@@ -21,16 +21,15 @@ incremental: true
 
 # exclude node_modules from jekyll generation
 exclude: [node_modules]
+# fix cache error
+exclude: [vendor]
 
 # do not delete these folders when regenerating jekyll site
 keep_files: [_site/css, _site/js]
 
 # compress html
-compress_html:
-  clippings: all
-  comments:  ["<!-- ", " -->"]
-  endings:   all
-  blanklines: false
-
-# fix cache error
-exclude: [vendor]
+# compress_html:
+#   clippings: all
+#   comments:  ["<!-- ", " -->"]
+#   endings:   all
+#   blanklines: false

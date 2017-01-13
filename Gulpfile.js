@@ -55,7 +55,7 @@ gulp.task('sass-develop', function () {
     return gulp.src('_sass/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths: ['scss'],
+            includePaths: ['scss', 'node_modules'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -67,7 +67,7 @@ gulp.task('sass-develop', function () {
 gulp.task('sass-build', function () {
     return gulp.src('_sass/main.scss')
         .pipe(sass({
-            includePaths: ['scss']
+            includePaths: ['scss', 'node_modules']
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(cssmin({
@@ -117,7 +117,7 @@ gulp.task('js-build', function () {
  */
 gulp.task('watch', function () {
   gulp.watch(['_js-es6/**/*.js'], ['js-develop']);
-  gulp.watch(['_sass/**/*.scss'], ['sass-develop']);
+  gulp.watch(['_sass/**/*.scss', 'node_modules/vanilla-framework/scss/**/*.scss'], ['sass-develop']);
   gulp.watch(['**/*.html', '**/*.markdown', '**/*.md'], ['jekyll-rebuild']);
 });
 

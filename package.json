@@ -36,5 +36,8 @@
     "browser-sync": "^2.11.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-cssmin": "^0.1.7"
+  },
+  "devDependencies": {
+    "vanilla-framework": "^1.1.3"
   }
 }
