@@ -2,22 +2,29 @@
 
 This is the repo for the Vanilla Framework brochure site
 
-## Getting started
+## Getting Started
 
-`npm i`
+To run this project, you need `npm` and Ruby's `gem` installed. E.g. Ubuntu:
 
-...will install all local dependencies.
+``` bash
+sudo apt install nodejs-legacy npm ruby
+```
 
-To fire up a local server while watching the site for changes just run;
+Now, in the project folder, install gem and nodejs dependencies:
 
-`gulp`
+``` bash
+bundle install
+npm i
+```
+
+### Run the site
+
+To fire up the project, run;
+
+``` bash
+gulp
+```
 
 ...your browser of choice should open a new window and run the site at;
 
-`http://localhost:3000`
-
-## Running tests locally
-
-To run test locally, simply run;
-
-`npm test`
+http://localhost:4000
