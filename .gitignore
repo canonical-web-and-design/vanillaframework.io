@@ -8,3 +8,4 @@ Gemfile.lock
 js/app.js.map
 /.bundle
 /vendor
+/css
