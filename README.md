@@ -22,7 +22,7 @@ npm i
 To fire up the project, run;
 
 ``` bash
-gulp
+npm run develop
 ```
 
 ...your browser of choice should open a new window and run the site at;
