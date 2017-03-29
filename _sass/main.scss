@@ -1,7 +1,8 @@
 @charset 'utf-8';
 
 // import vanilla
-@import "vanilla-framework/scss/build";
+@import 'vanilla-brochure-theme/scss/theme';
+@include vanilla-brochure-theme;
 
 
 // temp styling for brochure theme
