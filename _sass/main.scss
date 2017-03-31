@@ -4,33 +4,35 @@
 @import 'vanilla-brochure-theme/scss/theme';
 @include vanilla-brochure-theme;
 
+// XXX: Ant 30-03-2017
+// Temporary styling until following issue has been resolved:
+// https://github.com/vanilla-framework/vanilla-framework/issues/971
+@media (max-width: $breakpoint-medium) {
+  .p-navigation {
+    &__toggle--close,
+    &__toggle--open {
+      width: auto;
+      background: transparent;
+      padding: .5rem;
+      border: 0;
+    }
 
-// temp styling for brochure theme
+    &__nav {
+      display: none;
+    }
 
-// .p-strip--hero
-.p-strip--hero {
-  @extend .p-strip;
-  background: url(https://assets.ubuntu.com/v1/06a0285e-image-background-paper.png);
-  background-size: cover;
-  margin-top: -2rem;
-  padding: 4rem 0;
-}
+    &.is-open {
+      .p-navigation__nav {
+        display: block;
+      }
 
-// .p-strip--image
-.p-strip--image {
-  @extend .p-strip;
-  background: url(https://assets.ubuntu.com/v1/06a0285e-image-background-paper.png);
-  background-size: cover;
-}
+      .p-navigation__toggle--open {
+        display: none;
+      }
 
-// .p-divider
-.p-divider {
-
-  &__block {
-    border-right: 1px solid $color-mid-light;
-
-    &:last-child {
-      border-right: 0;
+      .p-navigation__toggle--close {
+        display: block;
+      }
     }
   }
 }
