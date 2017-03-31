@@ -9,3 +9,4 @@ js/app.js.map
 /.bundle
 /vendor
 /css
+npm-debug.log

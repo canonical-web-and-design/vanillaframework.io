@@ -7,51 +7,115 @@ sitemap:
     lastmod: 2017-01-13T17:20:30+00:00
 ---
 
-<div class="p-strip--hero" data-bg="https://assets.ubuntu.com/v1/06a0285e-image-background-paper.png">
+<div class="p-strip--light">
   <div class="row">
-    <div class="col-8">
+    <div class="col-6">
       <h1>Vanilla Framework</h1>
-      <p>Vanilla is a simple extensible CSS framework, written in Sass, by the Ubuntu Web Team.</p>
+      <p class="p-heading--four">
+        Vanilla is a simple extensible CSS framework,
+        written in Sass, by the Ubuntu Web Team.
+      </p>
+      <p>
+        <a href="" class="p-button--positive">Get started</a>
+        <a href="" class="p-button--neutral">
+          <span class="p-link--external">Vanilla on GitHub</span>
+        </a>
+      </p>
     </div>
   </div>
 </div>
 
-<div class="p-strip--image">
+<div class="p-strip--light">
   <div class="row">
-    <div class="col-3">
-      <img class="u-text-align--center" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
-      <h4>Lightweight</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
+    <div class="col-4">
+      <div class="p-heading-icon">
+        <div class="p-heading-icon__header">
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <h3 class="p-heading-icon__title">Lightweight</h3>
+        </div>
+        <p>
+          Vanilla contains a responsive CSS grid, basic style for HTML elements
+          and a selection of key useful patterns and utility classes that you
+          can extend.
+        </p>
+      </div>
     </div>
-    <div class="col-3">
-      <img class="u-text-align--center" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
-      <h4>Extendable</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
+    <div class="col-4">
+      <div class="p-heading-icon">
+        <div class="p-heading-icon__header">
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <h3 class="p-heading-icon__title">Extendable</h3>
+        </div>
+        <p>
+          Vanilla is designed to be extended directly or by extension themes.
+          There are key themes for different types of sites, or you can create
+          your own theme that perfectly suits your project.
+        </p>
+      </div>
     </div>
-    <div class="col-3">
-      <img class="u-text-align--center" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
-      <h4>Pure CSS</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
-    </div>
-    <div class="col-3">
-      <img class="u-text-align--center" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
-      <h4>Open source</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
+    <div class="col-4">
+      <div class="p-heading-icon">
+        <div class="p-heading-icon__header">
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <h3 class="p-heading-icon__title">Open source</h3>
+        </div>
+        <p>
+          Anyone can contribute to Vanilla, improve it and extend it. All the
+          code is available on GitHub and is licensed under LGPLv3 by Canonical.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="p-strip">
-  <div class="row p-divider">
-    <div class="col-6 p-divider__block">
-      <h2>Getting started</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
-      <p><button class="p-button--neutral">Get started</button></p>
+  <div class="row">
+    <div class="col-12 prefix-5">
+      <h2>Quick start</h2>
+      <pre><code>npm install --save-dev vanilla-framework
+export SASS_PATH=`pwd`/node_modules:${SASS_PATH}
+
+// Add to your main build scss file the following line
+@import 'vanilla-framework/scss/build'</code></pre>
     </div>
-    <div class="col-6 p-divider__block">
-      <h2>Docs</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
-      <p><button class="p-button--neutral">See the docs</button></p>
+  </div>
+</div>
+
+<div class="p-strip">
+  <div class="row">
+    <div class="col-4">
+      <h2>Guidelines</h2>
+      <p>
+        If you are contributing to Vanilla, make sure to read and follow these
+        guidelines.
+      </p>
+      <ul class="p-list--divided">
+        <li class="p-list__item">
+          <a href="" class="p-link--soft">Accessibilty&nbsp;&rsaquo;</a>
+        </li>
+        <li class="p-list__item">
+          <a href="" class="p-link--soft">Browser support&nbsp;&rsaquo;</a>
+        </li>
+        <li class="p-list__item">
+          <a href="" class="p-link--soft">Coding standards&nbsp;&rsaquo;</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="p-strip">
+  <div class="row">
+    <div class="col-8">
+      <h2>Who&rsquo;s using Vanilla</h2>
+      <div class="p-inline-images">
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" alt="Canonical" />
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/adac6928-ubuntu.svg" alt="Ubuntu" />
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/47ffe923-landscape-logo.svg" alt="Landscape" />
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/33409c7b-logo-maas.svg" alt="MAAS" />
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/7e21b535-logo-juju.svg" alt="Juju" />
+        <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/5051e6e5-core_logo.svg" alt="Ubuntu Core" />
+      </div>
     </div>
   </div>
 </div>
@@ -59,24 +123,38 @@ sitemap:
 <div class="p-strip--light">
   <div class="row p-divider">
     <div class="col-4 p-divider__block">
-      <h3>Accessibility&nbsp;&rsaquo;</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
+      <h2>Get involved</h2>
+      <p>
+        If you are contributing to Vanilla, make sure to read and follow these
+        guidelines.
+      </p>
+      <ul class="p-list--divided">
+        <li class="p-list__item">
+          <a href="https://github.com/vanilla-framework/vanilla-framework"
+            class="p-link--soft">
+            GitHub&nbsp;&rsaquo;
+          </a>
+        </li>
+        <li class="p-list__item">
+          <a href="https://mobile.twitter.com/vanillaframewrk"
+            class="p-link--soft">
+            Twitter&nbsp;&rsaquo;
+          </a>
+        </li>
+        <li class="p-list__item">
+          <a href="" class="p-link--soft">Slack&nbsp;&rsaquo;</a>
+        </li>
+      </ul>
     </div>
-    <div class="col-4 p-divider__block">
-      <h3>Browser support&nbsp;&rsaquo;</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
-    </div>
-    <div class="col-4 p-divider__block">
-      <h3>Coding standards&nbsp;&rsaquo;</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, labore at suscipit necessitatibus cumque commodi velit.</p>
+    <div class="col-8 p-divider__block">
+      <h3>Subscribe to Vanilla updates</h3>
+      <p>
+        Know about new releases, features, blog posts, calls-for-help and more.
+      </p>
+      <form>
+        <input type="text" name="email" placeholder="Your email address" />
+        <button type="submit" class="p-button">Submit</button>
+      </form>
     </div>
   </div>
-</div>
-
-<div class="p-strip">
-  <div class="p-inline-images">
-    <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/ff889486-google-social.svg" alt="Placeholder image" />
-    <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/ae5e5732-facebook-social.svg" alt="Placeholder image" />
-    <img class="p-inline-images__img" src="https://assets.ubuntu.com/v1/6bfc6710-twitter-social.svg" alt="Placeholder image" />
-</div>
 </div>
