@@ -36,3 +36,19 @@
     }
   }
 }
+
+// XXX: Ant 13-04-2017
+// Temporary styling until following issue has been resolved:
+// https://github.com/vanilla-framework/vanilla-framework/issues/1025
+.p-button--neutral .p-link--external {
+    @include link-svg-icon($color-x-dark);
+}
+
+// XXX: Ant 13-04-2017
+// Temporary styling until the muted heading pattern is developed:
+// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
+.p-muted-heading {
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: $color-dark;
+}
