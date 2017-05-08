@@ -25,3 +25,10 @@
   text-transform: uppercase;
   color: $color-dark;
 }
+
+// XXX: Ant 08-05-2017
+// Temporary styling until following issue has been resolved:
+// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/61
+[class^="p-strip"].is-bordered {
+  border-bottom: 1px solid $color-mid-light;
+}
