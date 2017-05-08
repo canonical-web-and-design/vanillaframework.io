@@ -13,5 +13,10 @@
         color: $color-dark;
       }
     }
+
+    &__links &__link,
+    &__links &__link:last-of-type {
+      border-color: $color-mid-light;
+    }
   }
 }
