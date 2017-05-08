@@ -1,0 +1,22 @@
+@mixin vfio-p-syntax-highlight {
+  .hljs-emphasis { font-style: italic; }
+  .hljs-strong { font-weight: bold; }
+  .hljs-comment { color: #595e62; }
+  .hljs-string { color: #183691; }
+  .hljs-number { color: #0086b3; }
+  .hljs-name { color: #63a35c; }
+  .hljs-selector-tag { color: #63a35c; }
+  .hljs-link { color: #0086b3; }
+  .hljs-keyword { color: #a71d5d; }
+  .hljs-attribute { color: #a71d5d; }
+  .hljs-attr { color: #795da3; }
+  .hljs-built_in { color: #0086b3; }
+  .hljs-title { color: #795da3; }
+  .hljs-section {
+    font-weight: bold;
+    color: #1d3e81; }
+  .hljs-meta {
+    font-weight: bold;
+    color: #1d3e81;
+    }
+}

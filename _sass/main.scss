@@ -8,7 +8,9 @@
 @include vanilla-brochure-theme;
 
 @import 'patterns_navigation';
+@import 'patterns_syntax-highlight';
 @include vfio-p-navigaiton;
+@include vfio-p-syntax-highlight;
 
 // XXX: Ant 13-04-2017
 // Temporary styling until following issue has been resolved:
