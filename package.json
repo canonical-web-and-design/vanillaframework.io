@@ -44,6 +44,6 @@
     "ubuntu-vanilla-theme": "0.0.35"
   },
   "dependencies": {
-    "vanilla-brochure-theme": "1.0.5"
+    "vanilla-brochure-theme": "1.0.x"
   }
 }

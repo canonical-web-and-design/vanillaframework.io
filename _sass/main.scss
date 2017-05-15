@@ -13,24 +13,6 @@
 @include vfio-p-syntax-highlight;
 
 // XXX: Ant 13-04-2017
-// Temporary styling until following issue has been resolved:
-// https://github.com/vanilla-framework/vanilla-framework/issues/1025
-.p-button--neutral .p-link--external {
-    @include link-svg-icon($color-x-dark);
-}
-
-// https://github.com/vanilla-framework/vanilla-framework/issues/971
-@media (max-width: $breakpoint-medium) {
-  .p-navigation {
-    &__toggle--close,
-    &__toggle--open {
-      background: transparent;
-      border: 0;
-      padding: .5rem;
-      width: auto;
-    }
-
-// XXX: Ant 13-04-2017
 // Temporary styling until the muted heading pattern is developed:
 // https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
 .p-muted-heading {
@@ -39,30 +21,3 @@
   color: $color-dark;
 }
 
-// XXX: Ant 08-05-2017
-// Temporary styling until following issue has been resolved:
-// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/61
-[class^="p-strip"].is-bordered {
-  border-bottom: 1px solid $color-mid-light;
-}
-
-// XXX: Ant 08-05-2017
-// Temporary styling until following issue has been resolved:
-// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/51
-[class^="p-strip"] {
-  &.is-shallow {
-    padding: $sp-large 0;
-
-    @media only screen and (min-width: $breakpoint-medium) {
-      padding: $sp-xx-large 0;
-    }
-  }
-
-  &.is-deep {
-    padding: $sp-xxx-large 0;
-
-    @media only screen and (min-width: $breakpoint-medium) {
-      padding: 6rem 0;
-    }
-  }
-}
