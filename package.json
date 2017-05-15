@@ -4,14 +4,10 @@
   "description": "Codebase for https://vanillaframework.io",
   "main": "_site/index.html",
   "scripts": {
-    "help": "gulp help",
-    "gulp": "gulp",
-    "browser-sync": "gulp browser-sync",
     "build": "gulp build",
-    "develop": "gulp develop",
-    "lint": "gulp lint",
     "test": "gulp test",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "clean": "rm -rf node_modules/ yarn-error.log css/"
   },
   "repository": {
     "type": "git",
