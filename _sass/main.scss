@@ -19,6 +19,17 @@
     @include link-svg-icon($color-x-dark);
 }
 
+// https://github.com/vanilla-framework/vanilla-framework/issues/971
+@media (max-width: $breakpoint-medium) {
+  .p-navigation {
+    &__toggle--close,
+    &__toggle--open {
+      background: transparent;
+      border: 0;
+      padding: .5rem;
+      width: auto;
+    }
+
 // XXX: Ant 13-04-2017
 // Temporary styling until the muted heading pattern is developed:
 // https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
