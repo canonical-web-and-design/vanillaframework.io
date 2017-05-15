@@ -1,11 +1,9 @@
 'use strict';
 
 import autoprefixer from 'gulp-autoprefixer';
-import cssnano from 'gulp-cssnano';
 import gulp from 'gulp';
 import sass from 'gulp-sass';
 import sassLint from 'gulp-sass-lint';
-import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 
 
