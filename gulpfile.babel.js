@@ -3,7 +3,6 @@
 import gulp from 'gulp';
 
 import './gulp/browser-sync';
-import './gulp/jekyll';
 import './gulp/js';
 import './gulp/sass';
 
@@ -31,10 +30,6 @@ gulp.task('watch', [
   'sass:watch',
 ]);
 
-gulp.task('serve', [
-  'jekyll:serve',
-]);
-
 gulp.task('develop', [
   'watch',
   'serve',
@@ -43,7 +38,6 @@ gulp.task('develop', [
 gulp.task('build', [
   'js:build',
   'sass:build',
-  'jekyll:build',
 ]);
 
 gulp.task('default', ['help']);
