@@ -20,9 +20,7 @@ markdown: kramdown
 incremental: true
 
 # exclude node_modules from jekyll generation
-exclude: [node_modules]
-# fix cache error
-exclude: [vendor]
+exclude: ["node_modules", "Gemfile*", "package.json", "README.md", "run", "yarn.lock", "*.log", "gulp*"]
 
 # do not delete these folders when regenerating jekyll site
 keep_files: [_site/css, _site/js]
