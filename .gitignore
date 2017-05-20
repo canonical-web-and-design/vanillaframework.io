@@ -1,4 +1,4 @@
-# OS files
+# OS & editor files
 Desktop.ini
 Thumbs.db
 ._*
@@ -8,6 +8,7 @@ Thumbs.db
 __*
 .AppleDouble
 .LSOverride
+.spelling
 
 # Cache and backup
 *.bak
