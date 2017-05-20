@@ -6,7 +6,7 @@
     "build": "gulp build",
     "test": "gulp test",
     "watch": "gulp watch",
-    "clean": "rm -rf node_modules/ yarn-error.log css/"
+    "clean": "rm -rf node_modules/ yarn-error.log css/ _site/ .bundle/ .jekyll-metadata"
   },
   "repository": {
     "type": "git",
