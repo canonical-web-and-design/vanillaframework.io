@@ -2,29 +2,22 @@
 
 This is the repo for the Vanilla Framework brochure site
 
-## Getting Started
+## Local development
 
-To run this project, you need `npm` and Ruby's `gem` installed. E.g. Ubuntu:
-
-``` bash
-sudo apt install nodejs-legacy npm ruby
-```
-
-Now, in the project folder, install gem and nodejs dependencies:
+The simplest way to run the site locally is to first [install Docker](https://docs.docker.com/engine/installation/) (on Linux you may need to [add your user to the `docker` group](https://docs.docker.com/engine/installation/linux/linux-postinstall/)), and then use the `./run` script:
 
 ``` bash
-bundle install
-npm i
+./run
 ```
 
-### Run the site
+Once the containers are setup, you can visit <http://127.0.0.1:8014> in your browser.
 
-To fire up the project, run;
+### Building CSS
+
+For working on [Sass files](_sass), you may want to dynamically watch for changes to rebuild the CSS whenever something changes.
+
+To setup the watcher, open a new terminal window and run:
 
 ``` bash
-npm run develop
+./run watch
 ```
-
-...your browser of choice should open a new window and run the site at;
-
-http://localhost:4000
