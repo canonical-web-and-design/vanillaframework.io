@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 // import settings
-@import '_settings_breakpoints.scss';
+@import 'settings_breakpoints';
 @import 'settings_colors';
 
 // import vanilla
@@ -17,8 +17,8 @@
 // Temporary styling until the muted heading pattern is developed:
 // https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
 .p-muted-heading {
+  color: $color-dark;
   font-size: .875rem;
   text-transform: uppercase;
-  color: $color-dark;
 }
 
