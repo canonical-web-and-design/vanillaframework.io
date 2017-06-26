@@ -1,0 +1,22 @@
+@mixin vfio-p-navigaiton {
+  .p-navigation {
+    background-color: $color-light;
+    border-bottom: 1px solid $color-mid-light;
+    color: $color-dark;
+
+    &__toggle--open,
+    &__toggle--close,
+    &__link {
+      color: $color-dark;
+
+      &:visited {
+        color: $color-dark;
+      }
+    }
+
+    &__links &__link,
+    &__links &__link:last-of-type {
+      border-color: $color-mid-light;
+    }
+  }
+}

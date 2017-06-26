@@ -1,21 +1,30 @@
-<header class="p-navigation js-navigation" role="banner">
+<header id="navigation" class="p-navigation--light js-navigation" role="banner">
   <div class="p-navigation__logo">
     <a class="p-navigation__link" href="#">
-      Vanilla Framework
+      <span class="u-off-screen">Vanilla Framework</span>
+      <img
+        src="https://assets.ubuntu.com/v1/d96d86b5-vanilla_black-orange_hex.svg"
+        alt="Vanilla framework logo"
+        style="float:left;" />
     </a>
   </div>
-  <button class="p-navigation__toggle--open js-navigation-open" title="menu">Menu</button>
-  <button class="p-navigation__toggle--close js-navigation-close" title="close menu">Close menu</button>
+  <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+    Menu
+  </a>
+  <a href="#navigation-closed" class="p-navigation__toggle--close"
+    title="close menu">
+    Close
+  </a>
   <nav class="p-navigation__nav">
     <span class="u-off-screen">
       <a href="#main-content">Jump to main content</a>
     </span>
     <div class="p-navigation__links">
-      <a class="p-navigation__link" href="#">Getting Started</a>
+      <a class="p-navigation__link" href="#">Getting started</a>
       <a class="p-navigation__link" href="#">Docs</a>
       <a class="p-navigation__link" href="#">Accessibility</a>
-      <a class="p-navigation__link" href="#">Browser Support</a>
-      <a class="p-navigation__link" href="#">Coding Standards</a>
+      <a class="p-navigation__link" href="#">Browser support</a>
+      <a class="p-navigation__link" href="#">Coding standards</a>
       <a class="p-navigation__link" href="#">Contribute</a>
     </div>
   </nav>

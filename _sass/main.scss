@@ -1,38 +1,24 @@
 @charset 'utf-8';
 
+// import settings
+@import 'settings_breakpoints';
+@import 'settings_colors';
+
 // import vanilla
 @import 'vanilla-brochure-theme/scss/theme';
 @include vanilla-brochure-theme;
 
-// XXX: Ant 30-03-2017
-// Temporary styling until following issue has been resolved:
-// https://github.com/vanilla-framework/vanilla-framework/issues/971
-@media (max-width: $breakpoint-medium) {
-  .p-navigation {
-    &__toggle--close,
-    &__toggle--open {
-      background: transparent;
-      border: 0;
-      padding: .5rem;
-      width: auto;
-    }
+@import 'patterns_navigation';
+@import 'patterns_syntax-highlight';
+@include vfio-p-navigaiton;
+@include vfio-p-syntax-highlight;
 
-    &__nav {
-      display: none;
-    }
-
-    &.is-open {
-      .p-navigation__nav {
-        display: block;
-      }
-
-      .p-navigation__toggle--open {
-        display: none;
-      }
-
-      .p-navigation__toggle--close {
-        display: block;
-      }
-    }
-  }
+// XXX: Ant 13-04-2017
+// Temporary styling until the muted heading pattern is developed:
+// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
+.p-muted-heading {
+  color: $color-dark;
+  font-size: .875rem;
+  text-transform: uppercase;
 }
+
