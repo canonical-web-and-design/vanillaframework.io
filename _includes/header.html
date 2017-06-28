@@ -29,17 +29,3 @@
     </div>
   </nav>
 </header>
-
-<script>
-  var close = document.querySelector('.js-navigation-close');
-  var open = document.querySelector('.js-navigation-open');
-  var navigation = document.querySelector('.js-navigation');
-  if (open && close && navigation) {
-    open.addEventListener('click', function (e) {
-      navigation.classList.add('is-open');
-    });
-    close.addEventListener('click', function (e) {
-      navigation.classList.remove('is-open');
-    });
-  }
-</script>
