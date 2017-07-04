@@ -10,7 +10,7 @@
 
 @import 'patterns_navigation';
 @import 'patterns_syntax-highlight';
-@include vfio-p-navigaiton;
+@include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
 // XXX: Ant 13-04-2017
@@ -21,4 +21,3 @@
   font-size: .875rem;
   text-transform: uppercase;
 }
-
