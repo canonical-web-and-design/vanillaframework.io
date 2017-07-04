@@ -12,12 +12,3 @@
 @import 'patterns_syntax-highlight';
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
-
-// XXX: Ant 13-04-2017
-// Temporary styling until the muted heading pattern is developed:
-// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
-.p-muted-heading {
-  color: $color-dark;
-  font-size: .875rem;
-  text-transform: uppercase;
-}
