@@ -32,7 +32,7 @@ button,
   border-top: 1px solid $color-mid-light;
   padding: $sp-large 0 0;
 
-  @media (max-width: $breakpoint-medium){
+  @media (max-width: $breakpoint-medium) {
 
     nav {
       margin-bottom: 0 !important;
@@ -43,7 +43,7 @@ button,
     }
   }
 
-  @media (min-width: $breakpoint-medium){
+  @media (min-width: $breakpoint-medium) {
 
     nav,
     & {
@@ -57,10 +57,10 @@ button,
 }
 
 .p-footer__link::after {
-  position: absolute;
-  top: -.65rem;
   left: auto;
-  right: -0.75rem;
+  position: absolute;
+  right: -.75rem;
+  top: -.65rem;
 }
 
 // Equal height wrapper adds margin-bottom
