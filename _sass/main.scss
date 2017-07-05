@@ -25,3 +25,46 @@ button,
     }
   }
 }
+
+// Temp fix Footer links does not follow spec
+// https://github.com/vanilla-framework/vanilla-framework/issues/1149
+.p-footer {
+  border-top: 1px solid $color-mid-light;
+  padding: $sp-large 0 0;
+
+  @media (max-width: $breakpoint-medium){
+
+    nav {
+      margin-bottom: 0 !important;
+    }
+
+    ul {
+      margin-top: $sp-medium;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium){
+
+    nav,
+    & {
+      margin-bottom: .5rem !important; // specicifity
+    }
+  }
+}
+
+.p-footer__link {
+  position: relative;
+}
+
+.p-footer__link::after {
+  position: absolute;
+  top: -.65rem;
+  left: auto;
+  right: -0.75rem;
+}
+
+// Navigation bottom border
+// https://github.com/vanilla-framework/vanilla-framework/issues/1150
+header[class^="p-navigation"] {
+  border-bottom: 1px solid $color-mid-light;
+}
