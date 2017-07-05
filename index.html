@@ -117,7 +117,7 @@ sitemap:
   </div>
 </div>
 
-<div class="p-strip is-bordered is-deep">
+<div class="p-strip is-bordered is-shallow">
   <div class="row">
     <h2 class="p-muted-heading u-align--center">Who&rsquo;s using Vanilla</h2>
     <div class="col-12">
@@ -164,8 +164,12 @@ sitemap:
         Know about new releases, features, blog posts, calls-for-help and more.
       </p>
       <form>
-        <input type="text" name="email" placeholder="Your email address" class="col-6" />
-        <button type="submit" class="p-button col-2">Subscribe</button>
+        <div class="col-6">
+          <input type="text" name="email" placeholder="Your email address" />
+        </div>
+        <div class="col-2">
+          <button type="submit" class="p-button">Subscribe</button>
+        </div>
       </form>
     </div>
   </div>
