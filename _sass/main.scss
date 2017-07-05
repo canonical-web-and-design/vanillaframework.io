@@ -63,8 +63,20 @@ button,
   right: -0.75rem;
 }
 
+// Equal height wrapper adds margin-bottom
+// https://github.com/vanilla-framework/vanilla-framework/issues/1152
+.u-equal-height {
+  margin-bottom: 0 !important;
+}
+
 // Navigation bottom border
 // https://github.com/vanilla-framework/vanilla-framework/issues/1150
 header[class^="p-navigation"] {
   border-bottom: 1px solid $color-mid-light;
+}
+
+// pre code blocks have margin-top
+// https://github.com/vanilla-framework/vanilla-framework/issues/1153
+pre:only-child {
+  margin-top: 0 !important;
 }
