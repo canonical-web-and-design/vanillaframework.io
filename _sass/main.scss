@@ -10,15 +10,73 @@
 
 @import 'patterns_navigation';
 @import 'patterns_syntax-highlight';
-@include vfio-p-navigaiton;
+@include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// XXX: Ant 13-04-2017
-// Temporary styling until the muted heading pattern is developed:
-// https://github.com/vanilla-framework/vanilla-brochure-theme/issues/66
-.p-muted-heading {
-  color: $color-dark;
-  font-size: .875rem;
-  text-transform: uppercase;
+// Consecutive button fix
+// https://github.com/vanilla-framework/vanilla-framework/issues/1144
+button,
+[class^="p-button"] {
+
+  & + & {
+
+    @media (min-width: $breakpoint-medium) {
+      margin-left: $sp-small;
+    }
+  }
 }
 
+// Temp fix Footer links does not follow spec
+// https://github.com/vanilla-framework/vanilla-framework/issues/1149
+.p-footer {
+  border-top: 1px solid $color-mid-light;
+  padding: $sp-large 0 0;
+
+  @media (max-width: $breakpoint-medium) {
+
+    nav {
+      margin-bottom: 0 !important;
+    }
+
+    ul {
+      margin-top: $sp-medium;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+
+    nav,
+    & {
+      margin-bottom: .5rem !important; // specicifity
+    }
+  }
+}
+
+.p-footer__link {
+  position: relative;
+}
+
+.p-footer__link::after {
+  left: auto;
+  position: absolute;
+  right: -.75rem;
+  top: -.65rem;
+}
+
+// Equal height wrapper adds margin-bottom
+// https://github.com/vanilla-framework/vanilla-framework/issues/1152
+.u-equal-height {
+  margin-bottom: 0 !important;
+}
+
+// Navigation bottom border
+// https://github.com/vanilla-framework/vanilla-framework/issues/1150
+header[class^="p-navigation"] {
+  border-bottom: 1px solid $color-mid-light;
+}
+
+// pre code blocks have margin-top
+// https://github.com/vanilla-framework/vanilla-framework/issues/1153
+pre:only-child {
+  margin-top: 0 !important;
+}

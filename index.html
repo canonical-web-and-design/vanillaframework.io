@@ -16,8 +16,8 @@ sitemap:
         written in Sass, by the Ubuntu Web Team.
       </p>
       <p>
-        <a href="" class="p-button--positive">Get started</a>
-        <a href="" class="p-button--neutral">
+        <a href="#getting-started" class="p-button--positive">Get started</a>
+        <a href="https://github.com/vanilla-framework/vanilla-framework" class="p-button--neutral">
           <span class="p-link--external">Vanilla on GitHub</span>
         </a>
       </p>
@@ -30,7 +30,7 @@ sitemap:
     <div class="col-4">
       <div class="p-heading-icon">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/fe40dc6a-pictogram_lightweight01b-dark.svg" />
           <h3 class="p-heading-icon__title">Lightweight</h3>
         </div>
         <p>
@@ -43,7 +43,7 @@ sitemap:
     <div class="col-4">
       <div class="p-heading-icon">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/ba665746-pictogram_extension01-dark.svg" />
           <h3 class="p-heading-icon__title">Extendable</h3>
         </div>
         <p>
@@ -56,7 +56,7 @@ sitemap:
     <div class="col-4">
       <div class="p-heading-icon">
         <div class="p-heading-icon__header">
-          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/c5b0f136-pictogram-smile-grey-sm.svg" />
+          <img class="p-heading-icon__img" src="https://assets.ubuntu.com/v1/bcf3db83-pictogram_opensource01-dark.svg" />
           <h3 class="p-heading-icon__title">Open source</h3>
         </div>
         <p>
@@ -68,10 +68,18 @@ sitemap:
   </div>
 </div>
 
-<div class="p-strip is-bordered is-deep">
+<div id="getting-started" class="p-strip is-bordered is-deep">
   <div class="row">
-    <div class="col-12 prefix-5">
+    <div class="col-12">
       <h2>Quick start</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <p>The recommended method of including Vanilla Framework in your project is via NPM. You can then simply include the framework in your SCSS files and compile.</p>
+      <p>For other methods, please see the <a href="#">advanced usage docs.</a></p>
+    </div>
+    <div class="col-7 prefix-1">
       <pre><code>npm install --save-dev vanilla-framework
 <span class="hljs-built_in">export</span> SASS_PATH=`<span class="hljs-built_in">pwd</span>`/node_modules:<span class="hljs-variable">${SASS_PATH}</span>
 
@@ -83,28 +91,33 @@ sitemap:
 
 <div class="p-strip is-bordered is-deep">
   <div class="row">
-    <div class="col-4">
-      <h2>Guidelines</h2>
-      <p>
-        If you are contributing to Vanilla, make sure to read and follow these
-        guidelines.
-      </p>
-      <ul class="p-list--divided">
-        <li class="p-list__item">
-          <a href="" class="p-link--soft">Accessibility&nbsp;&rsaquo;</a>
-        </li>
-        <li class="p-list__item">
-          <a href="" class="p-link--soft">Browser support&nbsp;&rsaquo;</a>
-        </li>
-        <li class="p-list__item">
-          <a href="" class="p-link--soft">Coding standards&nbsp;&rsaquo;</a>
-        </li>
-      </ul>
+    <div class="u-equal-height">
+      <div class="col-4">
+        <h2>Guidelines</h2>
+        <p>
+          If you are contributing to Vanilla, make sure to read and follow these
+          guidelines.
+        </p>
+        <ul class="p-list--divided">
+          <li class="p-list__item">
+            <a href="" class="p-link--soft">Accessibility&nbsp;&rsaquo;</a>
+          </li>
+          <li class="p-list__item">
+            <a href="" class="p-link--soft">Browser support&nbsp;&rsaquo;</a>
+          </li>
+          <li class="p-list__item">
+            <a href="" class="p-link--soft">Coding standards&nbsp;&rsaquo;</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-8 prefix-2 u-vertically-center">
+        <img src="https://assets.ubuntu.com/v1/4a810e12-guidelines-illustration.svg" alt="">
+      </div>
     </div>
   </div>
 </div>
 
-<div class="p-strip is-bordered is-deep">
+<div class="p-strip is-bordered is-shallow">
   <div class="row">
     <h2 class="p-muted-heading u-align--center">Who&rsquo;s using Vanilla</h2>
     <div class="col-12">
@@ -151,8 +164,12 @@ sitemap:
         Know about new releases, features, blog posts, calls-for-help and more.
       </p>
       <form>
-        <input type="text" name="email" placeholder="Your email address" class="col-6" />
-        <button type="submit" class="p-button col-2">Subscribe</button>
+        <div class="col-6">
+          <input type="text" name="email" placeholder="Your email address" />
+        </div>
+        <div class="col-2">
+          <button type="submit" class="p-button">Subscribe</button>
+        </div>
       </form>
     </div>
   </div>
