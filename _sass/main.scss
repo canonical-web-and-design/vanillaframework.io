@@ -13,19 +13,6 @@
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// Consecutive button fix
-// https://github.com/vanilla-framework/vanilla-framework/issues/1144
-button,
-[class^="p-button"] {
-
-  & + & {
-
-    @media (min-width: $breakpoint-medium) {
-      margin-left: $sp-small;
-    }
-  }
-}
-
 // Temp fix Footer links does not follow spec
 // https://github.com/vanilla-framework/vanilla-framework/issues/1149
 .p-footer {
