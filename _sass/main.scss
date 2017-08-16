@@ -12,9 +12,3 @@
 @import 'patterns_syntax-highlight';
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
-
-// pre code blocks have margin-top
-// https://github.com/vanilla-framework/vanilla-framework/issues/1153
-pre:only-child {
-  margin-top: 0 !important;
-}
