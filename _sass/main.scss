@@ -13,12 +13,6 @@
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// Navigation bottom border
-// https://github.com/vanilla-framework/vanilla-framework/issues/1150
-header[class^="p-navigation"] {
-  border-bottom: 1px solid $color-mid-light;
-}
-
 // pre code blocks have margin-top
 // https://github.com/vanilla-framework/vanilla-framework/issues/1153
 pre:only-child {
