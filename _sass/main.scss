@@ -13,12 +13,6 @@
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// Equal height wrapper adds margin-bottom
-// https://github.com/vanilla-framework/vanilla-framework/issues/1152
-.u-equal-height {
-  margin-bottom: 0 !important;
-}
-
 // Navigation bottom border
 // https://github.com/vanilla-framework/vanilla-framework/issues/1150
 header[class^="p-navigation"] {
