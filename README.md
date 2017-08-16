@@ -1,6 +1,6 @@
 # vanillaframework.io
 
-This is the repo for the Vanilla framework brochure site
+This is the repo for the Vanilla Framework brochure site
 
 ## Local development
 
