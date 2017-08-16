@@ -5,7 +5,7 @@
 @import 'settings_colors';
 
 // import vanilla
-@import 'vanilla-brochure-theme/scss/theme';
+@import '../node_modules/vanilla-framework/scss/build';
 @include vanilla-brochure-theme;
 
 @import 'patterns_navigation';
