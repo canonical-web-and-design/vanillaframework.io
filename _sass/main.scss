@@ -13,43 +13,6 @@
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// Temp fix Footer links does not follow spec
-// https://github.com/vanilla-framework/vanilla-framework/issues/1149
-.p-footer {
-  border-top: 1px solid $color-mid-light;
-  padding: $sp-large 0 0;
-
-  @media (max-width: $breakpoint-medium) {
-
-    nav {
-      margin-bottom: 0 !important;
-    }
-
-    ul {
-      margin-top: $sp-medium;
-    }
-  }
-
-  @media (min-width: $breakpoint-medium) {
-
-    nav,
-    & {
-      margin-bottom: .5rem !important; // specicifity
-    }
-  }
-}
-
-.p-footer__link {
-  position: relative;
-}
-
-.p-footer__link::after {
-  left: auto;
-  position: absolute;
-  right: -.75rem;
-  top: -.65rem;
-}
-
 // Equal height wrapper adds margin-bottom
 // https://github.com/vanilla-framework/vanilla-framework/issues/1152
 .u-equal-height {
