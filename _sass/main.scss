@@ -18,3 +18,7 @@
 .p-strip .p-link--external {
   color: $color-link;
 }
+
+.p-strip [class^="p-button"] .p-link--external {
+  color: inherit;
+}
