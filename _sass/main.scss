@@ -5,7 +5,7 @@
 @import 'settings_colors';
 
 // import vanilla
-@import 'vanilla-brochure-theme/scss/theme';
+@import '../node_modules/vanilla-framework/scss/build';
 @include vanilla-brochure-theme;
 
 @import 'patterns_navigation';
@@ -13,70 +13,12 @@
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
 
-// Consecutive button fix
-// https://github.com/vanilla-framework/vanilla-framework/issues/1144
-button,
-[class^="p-button"] {
-
-  & + & {
-
-    @media (min-width: $breakpoint-medium) {
-      margin-left: $sp-small;
-    }
-  }
+// fix .p-link---external colors
+// https://github.com/vanilla-framework/vanilla-framework/issues/1274
+.p-strip .p-link--external {
+  color: $color-link;
 }
 
-// Temp fix Footer links does not follow spec
-// https://github.com/vanilla-framework/vanilla-framework/issues/1149
-.p-footer {
-  border-top: 1px solid $color-mid-light;
-  padding: $sp-large 0 0;
-
-  @media (max-width: $breakpoint-medium) {
-
-    nav {
-      margin-bottom: 0 !important;
-    }
-
-    ul {
-      margin-top: $sp-medium;
-    }
-  }
-
-  @media (min-width: $breakpoint-medium) {
-
-    nav,
-    & {
-      margin-bottom: .5rem !important; // specicifity
-    }
-  }
-}
-
-.p-footer__link {
-  position: relative;
-}
-
-.p-footer__link::after {
-  left: auto;
-  position: absolute;
-  right: -.75rem;
-  top: -.65rem;
-}
-
-// Equal height wrapper adds margin-bottom
-// https://github.com/vanilla-framework/vanilla-framework/issues/1152
-.u-equal-height {
-  margin-bottom: 0 !important;
-}
-
-// Navigation bottom border
-// https://github.com/vanilla-framework/vanilla-framework/issues/1150
-header[class^="p-navigation"] {
-  border-bottom: 1px solid $color-mid-light;
-}
-
-// pre code blocks have margin-top
-// https://github.com/vanilla-framework/vanilla-framework/issues/1153
-pre:only-child {
-  margin-top: 0 !important;
+.p-strip [class^="p-button"] .p-link--external {
+  color: inherit;
 }
