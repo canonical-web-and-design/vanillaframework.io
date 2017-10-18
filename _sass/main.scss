@@ -6,15 +6,8 @@
 
 // import vanilla
 @import '../node_modules/vanilla-framework/scss/build';
-@include vanilla-brochure-theme;
 
 @import 'patterns_navigation';
 @import 'patterns_syntax-highlight';
 @include vfio-p-navigation;
 @include vfio-p-syntax-highlight;
-
-// fix .p-link---external colors
-// https://github.com/vanilla-framework/vanilla-framework/issues/1274
-.p-strip .p-link--external {
-  color: $color-link;
-}
