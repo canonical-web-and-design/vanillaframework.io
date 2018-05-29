@@ -9,3 +9,21 @@
 
 @import 'patterns_syntax-highlight';
 @include vfio-p-syntax-highlight;
+
+// XXX Caleb 29/05: Proposal to be included upstream in Vanilla
+// https://github.com/vanilla-framework/vanilla-framework/issues/1841
+.p-heading--stylized {
+  font-weight: 100;
+}
+
+// XXX Caleb 29/05: Temp fix for links that follow a button pattern
+// https://github.com/vanilla-framework/vanilla-framework/issues/1840
+.p-button--neutral + a {
+  margin-left: $sph-inter--expanded;
+
+  @media only screen and (max-width: $breakpoint-x-small) {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+}
