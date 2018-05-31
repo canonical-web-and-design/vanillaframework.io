@@ -3,9 +3,10 @@
 // import settings
 @import 'settings_breakpoints';
 @import 'settings_colors';
+$sticky-footer: true;
 
 // import vanilla
-@import '../node_modules/vanilla-framework/scss/build';
+@import 'vanilla-framework/scss/build';
 
 @import 'patterns_syntax-highlight';
 @include vfio-p-syntax-highlight;
@@ -26,4 +27,9 @@
     margin-left: 0;
     text-align: center;
   }
+}
+
+// XXX 31/05: Temp fix for sticky footer not working
+.p-footer {
+  margin-top: auto;
 }
