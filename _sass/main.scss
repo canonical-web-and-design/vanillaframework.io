@@ -17,18 +17,6 @@ $sticky-footer: true;
   font-weight: 100;
 }
 
-// XXX Caleb 29/05: Temp fix for links that follow a button pattern
-// https://github.com/vanilla-framework/vanilla-framework/issues/1840
-.p-button--neutral + a {
-  margin-left: $sph-inter--expanded;
-
-  @media only screen and (max-width: $breakpoint-x-small) {
-    display: block;
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
 // XXX 31/05: Temp fix for sticky footer not working
 .p-footer {
   margin-top: auto;
