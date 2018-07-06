@@ -22,6 +22,9 @@ incremental: true
 # exclude node_modules from jekyll generation
 exclude: ["node_modules", "Gemfile*", "package.json", "README.md", "run", "yarn.lock", "*.log", "gulp*", "vendor"]
 
+# files to include that would otherwise be ignored
+include: ["_status"]
+
 # do not delete these folders when regenerating jekyll site
 keep_files: [_site/css, _site/js]
 
