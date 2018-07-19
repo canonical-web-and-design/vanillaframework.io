@@ -10,19 +10,3 @@ $sticky-footer: true;
 
 @import 'patterns_syntax-highlight';
 @include vfio-p-syntax-highlight;
-
-// XXX Remove when updated to Vanilla >1.7.1
-.p-inline-images__logo {
-  width: 100%;
-}
-
-// XXX Caleb 29/05: Proposal to be included upstream in Vanilla
-// https://github.com/vanilla-framework/vanilla-framework/issues/1841
-.p-heading--stylized {
-  font-weight: 100;
-}
-
-// XXX 31/05: Temp fix for sticky footer not working
-.p-footer {
-  margin-top: auto;
-}
