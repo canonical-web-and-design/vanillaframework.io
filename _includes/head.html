@@ -32,4 +32,15 @@
     <meta name="apple-mobile-web-app-title" content="Vanilla Framework">
     <!-- Tile for Win8 -->
     <meta name="msapplication-TileColor" content="#E7542D">
+    <!-- Register service worker for offline -->
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', {scope: '/'})
+          .then(function(reg) {
+            console.log('Registration succeeded. Scope is ' + reg.scope);
+          }).catch(function(error) {
+            console.log('Registration failed with ' + error);
+          });
+      }
+    </script>
 </head>
