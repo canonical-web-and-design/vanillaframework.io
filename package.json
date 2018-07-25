@@ -28,5 +28,8 @@
     "sass-lint": "^1.10.2",
     "vanilla-framework": "1.8.0",
     "watch-cli": "^0.2.2"
+  },
+  "dependencies": {
+    "blazy": "^1.8.2"
   }
 }
