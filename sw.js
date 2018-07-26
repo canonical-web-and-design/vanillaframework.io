@@ -57,12 +57,24 @@ self.addEventListener('fetch', function(event) {
       return cache.addAll([
         '/',
         '/index.html',
+        '/index.html?homescreen=1',
+        '/?homescreen=1',
         '/accessibility.html',
         '/browser-support.html',
         '/coding-standards.html',
         '/contribute.html',
         '/css/minified/main.css'
       ]);
+    })
+  );
+});
+
+self.addEventListener('fetch', function(event) {
+  console.log(event.request.url);
+
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
     })
   );
 });

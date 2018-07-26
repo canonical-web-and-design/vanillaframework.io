@@ -422,7 +422,7 @@
       "sizes": "16x16"
     }
   ],
-  "start_url": "./",
+  "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#E7542D",
