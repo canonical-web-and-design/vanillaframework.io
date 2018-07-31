@@ -56,13 +56,13 @@ self.addEventListener('fetch', function(event) {
 
       return cache.addAll([
         '/',
-        '/index.html',
-        '/index.html?homescreen=1',
+        '/index',
+        '/index?homescreen=1',
         '/?homescreen=1',
-        '/accessibility.html',
-        '/browser-support.html',
-        '/coding-standards.html',
-        '/contribute.html',
+        '/accessibility',
+        '/browser-support',
+        '/coding-standards',
+        '/contribute',
         '/css/minified/main.css'
       ]);
     })
