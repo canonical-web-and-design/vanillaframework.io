@@ -4,7 +4,7 @@ desc: Vanilla Framework browser support
 sitemap:
     priority: 1.0
     changefreq: 'monthly'
-    lastmod: 2017-06-30T17:20:30+00:00
+    lastmod: 2018-08-01T17:20:30+00:00
 ---
 
 <div id="main-content" class="p-strip--image is-dark" style="background-image: url('https://assets.ubuntu.com/v1/775cc62b-vanilla-grad-background.png'); background-position: 75% 50%;">
@@ -15,25 +15,21 @@ sitemap:
 <div class="p-strip">
   <div class="row">
     <div class="col-8">
-      <p>The Vanilla Framework follows the principles of progressive enhancement and web standards. Users should be able to access core content and functionality from any browser or operating system, with varying degrees of access to visual and other enhancements — design patterns do not have to look exactly the same on every browser.
+      <p class="p-heading--four">The Vanilla framework follows the principles of progressive enhancement and web standards. Users should be able to access core content and functionality from any browser or operating system, with varying degrees of access to visual and other enhancements — design patterns do not have to look exactly the same on every browser.
       </p>
       <h3>How bugs are prioritised</h3>
-      <p>If the bug prevents access to core content (for example, by hiding it or covering it), it should be prioritised If the bug relates to visual differences that do not affect access to content on modern browsers, it should be queued up. Priority level should be determined case by case If the bug relates to visual differences that do not affect access to content on old browsers, it should be deprioritised, and potentially marked as “Won’t fix” (this should be decided case by case)</p>
-      <h3>Browsers and operating systems we test on</h3>
+      <p>If the bug prevents access to core content (for example, by hiding it or covering it), it should be prioritised If the bug relates to visual differences that do not affect access to content on modern browsers, it should be queued up. Priority level should be determined case by case If the bug relates to visual differences that do not affect access to content on old browsers, it should be deprioritised, and potentially marked as “Won’t fix” (this should be decided case by case).</p>
+      <h3>Supported browsers</h3>
       <p>The following are the browsers that we actively test all patterns on. That does not mean other browsers are not supported or that bugs reported are not acted on.</p>
-      <ul>
-        <li>Google Chrome (latest stable)</li>
-        <li>Apple Safari (latest)</li>
-        <li>Firefox (latest stable)</li>
-        <li>Google Chrome for Android and iOS (latest stable)</li>
-        <li>Microsoft IE 9+</li>
-        <li>Microsoft Edge</li>
-        <li>Apple Safari for iOS (latest)</li>
-        <li>Opera (latest stable)</li>
-        <li>Opera Mini (latest stable)</li>
+      <ul class="p-list--divided is-split">
+        <li class="p-list__item"><span class="p-icon--chrome"></span>Chrome 55 or greater</li>
+        <li class="p-list__item"><span class="p-icon--firefox"></span>Firefox 52 or greater</li>
+        <li class="p-list__item"><span class="p-icon--safari"></span>Safari 11 or greater</li>
+        <li class="p-list__item"><span class="p-icon--ie"></span>IE 11 or greater</li>
+        <li class="p-list__item"><span class="p-icon--edge"></span>Edge 15 or greater</li>
+        <li class="p-list__item"><span class="p-icon--opera"></span>Opera 48 or greater</li>
       </ul>
       <p>We have a range of test devices that reflect the current marketplace and our own stats.</p>
-      <p>Last update: {{ page.sitemap.lastmod | date: '%d %B %Y'}}</p>
     </div>
   </div>
 </div>
