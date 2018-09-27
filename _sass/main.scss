@@ -13,3 +13,6 @@ $sticky-footer: true;
 
 @import 'patterns_icons';
 @include vfio-p-icons;
+
+@import 'patterns_grid';
+@include vfio-p-grid;
