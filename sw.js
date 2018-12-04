@@ -1,3 +1,4 @@
+var CACHE_NAME = 'v1';
 var assetServerUrl = 'https://assets.ubuntu.com';
 var thirdPartyAssetPaths = [
   '/v1/1958451f-pictogram_lightweight01b-dark.svg',
@@ -21,38 +22,18 @@ var thirdPartyAssetPaths = [
   '/v1/f307a122-icon-github.svg'
 ];
 
-// when requesting asset, if it doesn't exist but the path is in thirdPartyAssetPaths,
-// use the corresponding asset
-
 self.addEventListener('install', function(event) {
-  // event.waitUntil(
-  //   caches.open('v1').then(function(cache) {
-  //     thirdPartyAssetPaths.forEach(function(assetPath) {
-  //       var request = new Request(assetServerUrl + assetPath, {
-  //         mode: 'no-cors'
-  //       });
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function(cache) {
+      thirdPartyAssetPaths.forEach(function(assetPath) {
+        var request = new Request(assetServerUrl + assetPath, {
+          mode: 'no-cors'
+        });
 
-  //       fetch(request).then(function(response) {
-  //         cache.put(request, response);
-  //       });
-  //     });
-
-  //     return cache.addAll([
-  //       '/',
-  //       '/index.html',
-  //       '/css/main.css'
-  //     ]);
-  //   })
-  // );
-});
-
-self.addEventListener('fetch', function(event) {
-  console.log(event);
-  // event.respondWith(
-  //   caches.open('v1').then(function(cache) {
-  //     return cache.match(event.request).then(function (response) {
-  //       if (event.request.includes(assetServerUrl)) {
-  //       }
+        fetch(request).then(function(response) {
+          cache.put(request, response);
+        });
+      });
 
       return cache.addAll([
         '/',
