@@ -1,4 +1,5 @@
 # vanillaframework.io
+[![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/vanillaframework.io.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/vanillaframework.io) [![Code coverage](https://codecov.io/gh/canonical-web-and-design/vanillaframework.io/branch/master/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/vanillaframework.io)
 
 This is the repo for the Vanilla Framework brochure site
 
