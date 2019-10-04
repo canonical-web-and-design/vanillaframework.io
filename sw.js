@@ -44,7 +44,7 @@ self.addEventListener('install', function(event) {
         '/browser-support.html',
         '/coding-standards.html',
         '/contribute.html',
-        '/css/minified/main.css'
+        '/css/main.css'
       ]);
     })
   );
