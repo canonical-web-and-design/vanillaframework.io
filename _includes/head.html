@@ -1,4 +1,7 @@
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vanilla Framework</title>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -6,24 +9,21 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-K7ZB6FL');</script>
   <!-- End Google Tag Manager -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.copydoc %}
-    <meta name="copydoc" content="{{ page.copydoc }}" />
-  {% endif %}
-  <link rel="icon" href="https://assets.ubuntu.com/v1/bbba0152-vanilla_favicon_16px.png" type="image/x-icon" />
-  <title>Vanilla Framework</title>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Crazy Egg A/B testing -->
   <script type="text/javascript" src="https://script.crazyegg.com/pages/scripts/0011/8875.js" async="async"></script>
+  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+  <script>
+    var bLazy = new Blazy();
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="icon" href="https://assets.ubuntu.com/v1/bbba0152-vanilla_favicon_16px.png" type="image/x-icon" />
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <meta name="msapplication-navbutton-color" content="#E7542D">
   <meta name="msapplication-starturl" content="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Chrome for Android theme color -->
   <meta name="theme-color" content="#E7542D">
   <!-- Add to homescreen for Chrome on Android -->
@@ -35,6 +35,9 @@
   <meta name="apple-mobile-web-app-title" content="Vanilla Framework">
   <!-- Tile for Win8 -->
   <meta name="msapplication-TileColor" content="#E7542D">
+  {% if page.copydoc %}
+    <meta name="copydoc" content="{{ page.copydoc }}" />
+  {% endif %}
   <!-- Register service worker for offline -->
   <script type="text/javascript">
     if ('serviceWorker' in navigator) {
@@ -45,9 +48,5 @@
           console.log('Registration failed with ' + error);
         });
     }
-  </script>
-  <script src="https://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
-  <script>
-    var bLazy = new Blazy();
   </script>
 </head>
