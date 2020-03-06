@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This repository is archived. The vanillaframework.io site was moved to [@canonical-web-and-design/vanilla-framework](https://github.com/canonical-web-and-design/vanilla-framework/).
+
 # vanillaframework.io
 [![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/vanillaframework.io.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/vanillaframework.io) [![Code coverage](https://codecov.io/gh/canonical-web-and-design/vanillaframework.io/branch/master/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/vanillaframework.io)
 
